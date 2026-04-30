@@ -1,0 +1,32 @@
+[0m00:23:01.031991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001416F3C5190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141727BE330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001416EA5B440>]}
+
+
+============================== 00:23:01.036005 | 23e9e752-931f-43bf-bdc7-314914451712 ==============================
+[0m00:23:01.036005 [info ] [MainThread]: Running with dbt=1.11.7
+[0m00:23:01.037512 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\bofa\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init --skip-profile-setup airbnb', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:23:01.106575 [debug] [MainThread]: Starter project path: C:\Users\bofa\Documents\Learn\dbt_learn\airbnb_with_dbt_snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m00:23:01.114863 [info ] [MainThread]: 
+Your new dbt project "airbnb" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:23:01.115864 [debug] [MainThread]: Command `dbt init` succeeded at 00:23:01.115864 after 0.22 seconds
+[0m00:23:01.115864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141722725A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141726C1340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141726C3500>]}
+[0m00:23:01.115864 [debug] [MainThread]: Flushing usage events
+[0m00:23:02.050642 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.173"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019ddca4-f0f7-7751-a93c-b212318cc624","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.173","name":"MainReportVersion","pid":3240,"thread":"tokio-rt-worker","ts":"2026-04-30T04:28:10.365082Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\bofa\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019ddca4-f0f7-7751-a93c-b212318cc624","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":3240,"thread":"tokio-rt-worker","ts":"2026-04-30T04:28:10.365172Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019ddca4-f0f7-7751-a93c-b212318cc624","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":3240,"thread":"tokio-rt-worker","ts":"2026-04-30T04:28:10.370040Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019ddca4-f0f7-7751-a93c-b212318cc624","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":3240,"thread":"tokio-rt-worker","ts":"2026-04-30T04:28:10.370588Z"}}
+{"data":{"completed_at":"2026-04-30T04:28:10.612602Z","elapsed":0.2480854094028473,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019ddca4-f0f7-7751-a93c-b212318cc624","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [248ms]","name":"CommandCompleted","pid":3240,"thread":"tokio-rt-worker","ts":"2026-04-30T04:28:10.612791Z"}}
